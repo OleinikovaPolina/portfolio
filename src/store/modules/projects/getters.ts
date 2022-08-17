@@ -1,16 +1,25 @@
 import { GetterTree } from 'vuex'
 
-import type { SocialType } from '@/types'
+import type { ProjectType } from '@/types'
 
 import { RootState } from '@/store'
 import { State } from './state'
 
 export type Getters = {
-  socials (state: State): SocialType[],
-  email (state: State): string,
+  projects (state: State): (categories: string[], title: string) => ProjectType[],
+  categories (state: State): string[],
 }
 
 export const getters: GetterTree<State, RootState> & Getters = {
-  socials: (state) => state.socials,
-  email: (state) => state.email,
+  projects: (state) => (categories = [], title = '') => {
+    return state.projects
+      .filter(project => (!categories.length || project.categories
+        .some((category) => categories
+          .includes(category)))
+      )
+      .filter(project => project.title.toLowerCase().includes(title.toLowerCase().trim()))
+  },
+  categories: (state) => {
+    return state.categories
+  }
 }

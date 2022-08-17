@@ -1,0 +1,25 @@
+.section-background {
+  background-color: rgba(178, 197, 203, .15);
+}
+
+.section-header {
+  min-height: calc(100vh - 120px);
+  @media (min-width: 960px) {
+    min-height: calc(100vh - 64px)
+  }
+}
+
+li {
+  margin-left: 2em;
+}
+
+.fadein {
+  transform: translateY(150px);
+  opacity: 0;
+  transition: all 1s!important;
+}
+
+.fadein.active {
+  transform: translateY(0);
+  opacity: 1;
+}

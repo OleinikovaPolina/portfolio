@@ -8,7 +8,7 @@ export { State }
 import { state } from './state'
 import { getters } from './getters'
 
-export type ApplicationStore<S = State> = Omit<VuexStore<S>, 'getters' | 'commit' | 'dispatch'>
+export type ContactsStore<S = State> = Omit<VuexStore<S>, 'getters' | 'commit' | 'dispatch'>
 
 export const store: Module<State, RootState> = {
   state,

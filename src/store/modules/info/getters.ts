@@ -1,18 +1,18 @@
 import { GetterTree } from 'vuex'
 
-import type { InfoType, TechnologyType } from '@/types'
+import type { AchievementType, InfoType, TechnologyType } from '@/types'
 
 import { RootState } from '@/store'
 import { State } from './state'
 
 export type Getters = {
   work (state: State): InfoType[],
-  education (state: State): InfoType[],
   skills (state: State): TechnologyType[],
+  achievements (state: State): AchievementType[],
 }
 
 export const getters: GetterTree<State, RootState> & Getters = {
+  achievements: (state) => state.achievements,
   work: (state) => state.work,
-  education: (state) => state.education,
   skills: (state) => state.skills
 }

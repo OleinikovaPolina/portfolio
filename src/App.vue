@@ -1,30 +1,47 @@
 <template>
-  <nav>
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
-  </nav>
-  <router-view />
+  <v-app :theme="theme">
+    <nav-component />
+    <nav-bottom-component v-if="$vuetify.display.smAndDown" />
+
+    <v-main style="min-height: 100vh">
+      <router-view />
+    </v-main>
+
+    <v-footer app>
+      <footer-component />
+    </v-footer>
+  </v-app>
 </template>
 
-<style lang="scss">
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
+<script setup lang="ts">
+/* Components */
+import NavComponent from '@/components/app/NavComponent.vue'
+import NavBottomComponent from '@/components/app/NavBottomComponent.vue'
+import FooterComponent from '@/components/app/FooterComponent.vue'
 
-nav {
-  padding: 30px;
+import { computed, onMounted } from 'vue'
+import { useStore } from 'vuex'
 
-  a {
-    font-weight: bold;
-    color: #2c3e50;
+const store = useStore()
+const theme = computed(() => store.getters['application/theme'])
 
-    &.router-link-exact-active {
-      color: #42b983;
+let height = document.documentElement.clientHeight
+
+function fadein () {
+  document.querySelectorAll('.fadein').forEach(el => {
+    if(!el.classList.contains('active')) {
+      let bottomLine = el.getBoundingClientRect().top
+      if (bottomLine < height && bottomLine > 0) {
+        el.classList.add('active')
+      }
     }
-  }
+  })
 }
-</style>
+
+onMounted(() => {
+  fadein()
+})
+window.addEventListener('scroll', () => {
+  fadein()
+})
+</script>
