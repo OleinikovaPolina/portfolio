@@ -1,7 +1,7 @@
 <template>
   <div class="py-8 py-md-16">
     <div class="text-h5 text-md-h4 text-lg-h3 mx-auto text-center pb-4 pb-md-8">
-      Achievements And Certifications
+      {{ $t('achievementsTitle') }}
     </div>
     <v-carousel
       height="auto"
@@ -27,8 +27,8 @@
                     <v-img
                       class="rounded-t"
                       :src="achievements[index + i - 2].image"
+                      :cover="true"
                       height="100px"
-                      cover
                     />
                     <v-card-title
                       class="text-subtitle-1 pb-0"
@@ -41,7 +41,7 @@
                         v-for="item in achievements[index + i - 2].content"
                         :key="item"
                       >
-                        <li>{{ item }}</li>
+                        <li>{{ $rt(item) }}</li>
                       </ul>
                     </v-card-text>
                   </v-card>

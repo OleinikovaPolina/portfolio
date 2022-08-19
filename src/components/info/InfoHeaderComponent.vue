@@ -11,7 +11,7 @@
     >
       <div class="d-flex align-center justify-center justify-md-start mb-4">
         <div class="text-h4 text-md-h3 text-lg-h2 mr-4">
-          Hi all, I'm Saad
+          {{ t('title') }}
         </div>
         <div>
           <v-img
@@ -23,21 +23,20 @@
         </div>
       </div>
       <div class="text-body-2 text-md-subtitle-1 mb-4">
-        A passionate Full Stack Software Developer 🚀 having an experience of building Web and Mobile applications
-        with JavaScript / Reactjs / Nodejs / React Native and some other cool libraries and frameworks.
+        {{ t('subtitle') }}
       </div>
       <div class="d-flex justify-center justify-md-start">
         <v-btn
           color="info"
           class="mr-4 elevation-0"
         >
-          CONTACT ME
+          {{ t('contact') }}
         </v-btn>
         <v-btn
           class="elevation-0"
           color="info"
         >
-          SEE MY RESUME
+          {{ t('resume') }}
         </v-btn>
       </div>
     </v-col>
@@ -56,6 +55,12 @@
 </template>
 
 <script setup lang="ts">
+import { useI18n } from 'vue-i18n'
+
+const { t } = useI18n({
+  inheritLocale: true,
+  useScope: 'local'
+})
 </script>
 <style scoped>
 @keyframes hi {
@@ -90,3 +95,20 @@
   transform-origin: 75% 75%;
 }
 </style>
+
+<i18n>
+{
+  "en": {
+    "title": "Hi all, I'm Polina",
+    "subtitle": "A passionate Frontend Developer 🚀 having an experience of building Web applications with TypeScript / JavaScript / Vuejs / Nuxtjs and some other cool libraries and frameworks.",
+    "contact": "contact me",
+    "resume": "resume"
+  },
+  "ru": {
+    "title": "Привет, я Полина!",
+    "subtitle": "Увлеченный фронтенд разработчик 🚀, имеющий опыт создания веб-приложений с помощью TypeScript / JavaScript / Vuejs / Nuxtjs и некоторых других интересных библиотек и фреймворков.",
+    "contact": "связаться",
+    "resume": "резюме"
+  }
+}
+</i18n>

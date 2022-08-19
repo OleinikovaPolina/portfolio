@@ -10,7 +10,7 @@
         lg="6"
         class=" text-center mx-auto text-h5 text-md-h4 text-lg-h3"
       >
-        Skills
+        {{ t('title') }}
       </v-col>
       <v-col
         cols="10"
@@ -18,7 +18,7 @@
         lg="5"
         class=" text-center mx-auto "
       >
-        CRAZY FULL STACK DEVELOPER WHO WANTS TO EXPLORE EVERY TECH STACK
+        {{ t('subtitle') }}
       </v-col>
       <div
         class="hex-container"
@@ -143,11 +143,15 @@
 <script setup lang="ts">
 import { ref, onMounted, watch, computed } from 'vue'
 import { useStore } from 'vuex'
+import { useI18n } from 'vue-i18n'
 
 const store = useStore()
 const skills = computed(() => store.getters['info/skills'])
-
 const scrolled = ref(false)
+const { t } = useI18n({
+  inheritLocale: true,
+  useScope: 'local'
+})
 
 watch(scrolled, (val) => {
   if (val) {
@@ -728,3 +732,16 @@ function hexHoverNot (i: number) {
   }
 }
 </style>
+
+<i18n>
+{
+  "en": {
+    "title": "Skills",
+    "subtitle": "Tools, languages and other things that I like to work with"
+  },
+  "ru": {
+    "title": "Навыки",
+    "subtitle": "Инструменты, языки и другие вещи, с которыми мне нравится работать"
+  }
+}
+</i18n>

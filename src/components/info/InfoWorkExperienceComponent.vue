@@ -1,7 +1,7 @@
 <template>
   <div>
     <div class="text-h5 text-md-h4 text-lg-h3 mx-auto text-center pb-4 pb-md-8">
-      Work experience
+      {{ t('title') }}
     </div>
     <v-row align="center">
       <v-col
@@ -13,7 +13,7 @@
           :side="$vuetify.display.smAndDown?'end':undefined"
         >
           <v-timeline-item
-            v-for="(item,i) in work"
+            v-for="(item,i) in tm('work')"
             :key="i"
             dot-color="info"
             size="small"
@@ -22,10 +22,10 @@
           >
             <v-card class="mb-4 mb-md-0 fadein">
               <v-card-title class="pb-0">
-                {{ item.name }}
+                {{ rt(item.name) }}
               </v-card-title>
               <v-card-subtitle>
-                {{ item.date }}
+                {{ rt(item.date) }}
               </v-card-subtitle>
               <v-card-text class="pt-2">
                 <ul class="text-left">
@@ -34,7 +34,7 @@
                     :key="content"
                   >
                     <div class="text-subtitle-1">
-                      {{ content }}
+                      {{ rt(content) }}
                     </div>
                   </li>
                 </ul>
@@ -54,11 +54,12 @@
 </template>
 
 <script setup lang="ts">
-import { useStore } from 'vuex'
-import { computed } from 'vue'
+import { useI18n } from 'vue-i18n'
 
-const store = useStore()
-const work = computed(() => store.getters['info/work'])
+const { t, tm, rt } = useI18n({
+  inheritLocale: true,
+  useScope: 'local'
+})
 </script>
 
 <style lang="scss">
@@ -66,7 +67,52 @@ const work = computed(() => store.getters['info/work'])
   justify-content: center;
 }
 
- .v-timeline .v-card * {
+.v-timeline .v-card * {
   line-height: 1.5rem;
 }
 </style>
+
+<i18n>
+{
+  "en": {
+    "title": "Work experience",
+    "work": [
+      {
+        "name": "Information Development Department ITMO",
+        "date": "Sep 2022 - Present",
+        "content": [
+          "my.itmo"
+        ]
+      },
+      {
+        "name": "Project activity",
+        "date": "Sep 2021 - Aug 2022",
+        "content": [
+          "Website of the Faculty of ICT ITMO",
+          "Information and educational project 'Alexander Nevsky'"
+        ]
+      }
+    ]
+  },
+  "ru": {
+    "title": "Опыт работы",
+    "work": [
+      {
+        "name": "Департамент информационного развития ИТМО",
+        "date": "Сентябрь 2022 - Настоящее время",
+        "content": [
+          "my.itmo"
+        ]
+      },
+      {
+        "name": "Проектная деятельность",
+        "date": "Сентябрь 2021 - Август 2022",
+        "content": [
+          "Сайт факультета ИКТ ИТМО",
+          "Информационно-образовательный проект 'Александр Невский'"
+        ]
+      }
+    ]
+  }
+}
+</i18n>

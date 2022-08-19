@@ -8,7 +8,7 @@
       class="text-h5 text-md-h4 text-lg-h3 d-table mx-auto"
       style="z-index: 1;"
     >
-      <span class="d-table-cell">Education</span>
+      <span class="d-table-cell">{{ t('title') }}</span>
     </div>
 
     <v-col
@@ -28,23 +28,57 @@
           :src="require('../../assets/images/itmologo.jpg')"
         />
         <div class="text-h5">
-          ITMO University
+          {{ t('university') }}
         </div>
         <div class="font-weight-bold">
-          Mobile and network technologies
+          {{ t('direction') }}
         </div>
         <div>
-          September 2021 - Present day
+          {{ t('date') }}
         </div>
         <ul class="text-medium-emphasis">
-          <li>Member of the front-end development club</li>
+          <li
+            v-for="(n,i) in tm('list')"
+            :key="i"
+          >
+            {{ rt(n) }}
+          </li>
         </ul>
-        <info-graduate />
+        <info-graduate-component />
       </v-card>
     </v-col>
   </div>
 </template>
 
 <script setup lang="ts">
-import InfoGraduate from '@/components/info/InfoGraduate.vue'
+import InfoGraduateComponent from '@/components/info/InfoGraduateComponent.vue'
+import { useI18n } from 'vue-i18n'
+
+const { t, tm, rt } = useI18n({
+  inheritLocale: true,
+  useScope: 'local'
+})
 </script>
+
+<i18n>
+{
+  "en": {
+    "title": "Education",
+    "university": "ITMO University",
+    "direction": "Mobile and network technologies",
+    "date": "September 2021 - Present",
+    "list": [
+      "Member of the front-end development club"
+    ]
+  },
+  "ru": {
+    "title": "Образование",
+    "university": "Университет ИТМО",
+    "direction": "Мобильные и сетевые технологии",
+    "date": "Сентябрь 2021 - Настоящее время",
+    "list": [
+      "Член клуба фронтенд-разработок"
+    ]
+  }
+}
+</i18n>

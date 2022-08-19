@@ -3,7 +3,7 @@ import { MutationTree } from 'vuex'
 import { State } from './state'
 
 export type Mutations = {
-  CHANGE_THEME (state: State, payload: string): void
+  CHANGE_THEME (state: State): void
 }
 
 export const mutations: MutationTree<State> & Mutations = {

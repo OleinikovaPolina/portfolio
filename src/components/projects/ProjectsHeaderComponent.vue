@@ -10,12 +10,11 @@
     >
       <div class="d-flex align-center justify-center justify-md-start mb-4">
         <div class="text-h4 text-md-h3 text-lg-h2 mr-4">
-          Projects
+          {{ t('title') }}
         </div>
       </div>
       <div class="text-body-2 text-md-subtitle-1 mb-4">
-        A passionate Full Stack Software Developer 🚀 having an experience of building Web and Mobile applications
-        with JavaScript / Reactjs / Nodejs / React Native and some other cool libraries and frameworks.
+        {{ t('subtitle') }}
       </div>
       <div class="d-flex justify-center justify-md-start">
         <v-btn
@@ -34,3 +33,25 @@
     </v-col>
   </v-row>
 </template>
+
+<script setup lang="ts">
+import { useI18n } from 'vue-i18n'
+
+const { t } = useI18n({
+  inheritLocale: true,
+  useScope: 'local'
+})
+</script>
+
+<i18n>
+{
+  "en": {
+    "title": "Projects",
+    "subtitle": "My projects makes use of vast variety of latest technology tools."
+  },
+  "ru": {
+    "title": "Проекты",
+    "subtitle": "В моих проектах используется широкий спектр новейших технологических инструментов."
+  }
+}
+</i18n>

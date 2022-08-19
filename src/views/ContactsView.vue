@@ -24,13 +24,19 @@
             :href="contact.href"
             :icon="true"
             target="_blank"
-            color="info"
+            :color="contact.color"
             class="mr-4 elevation-0 rounded-circle"
           >
-            <v-icon v-if="contact.icon">
+            <v-icon
+              v-if="contact.icon"
+              color="white"
+            >
               {{ contact.icon }}
             </v-icon>
-            <span v-else>{{ contact.name }}</span>
+            <span
+              v-else
+              class="text-white"
+            >{{ contact.name }}</span>
           </v-btn>
         </div>
       </v-col>

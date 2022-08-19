@@ -12,7 +12,7 @@
           >
             <v-text-field
               v-model="form.title"
-              label="First name"
+              :label="t('search')"
               variant="outlined"
               density="comfortable"
               required
@@ -24,13 +24,14 @@
             <v-autocomplete
               v-model="form.categories"
               :items="categories"
-              label="Select"
+              :label="t('category')"
               variant="outlined"
               density="comfortable"
               multiple
               filled
               chips
               closable-chips
+              :no-data-text="t('notfound')"
             >
               <template #chip="{ props, selection }">
                 <v-chip
@@ -45,7 +46,7 @@
                   v-if="selection.index === 1"
                   class="text-grey text-caption align-self-center"
                 >
-                  (+{{ form.categories.length - 1 }} others)
+                  (+{{ form.categories.length - 1 }} {{ t('others') }})
                 </span>
               </template>
             </v-autocomplete>
@@ -79,21 +80,25 @@
 </template>
 
 <script setup lang="ts">
-type FormType = {
-  categories: string[],
-  title: string,
-}
-
 import ProjectsHeaderComponent from '@/components/projects/ProjectsHeaderComponent.vue'
 import ProjectsCardComponent from '@/components/projects/ProjectsCardComponent.vue'
 import ProjectsModalComponent from '@/components/projects/ProjectsModalComponent.vue'
 import { onMounted, ref, watch } from 'vue'
 import { useStore } from 'vuex'
+import { useI18n } from 'vue-i18n'
 import { ProjectType } from '@/types'
+
+type FormType = {
+  categories: string[],
+  title: string,
+}
 
 const store = useStore()
 const categories = store.getters['projects/categories']
-
+const { t } = useI18n({
+  inheritLocale: true,
+  useScope: 'local'
+})
 const projects = ref<ProjectType[]>([])
 const activeProject = ref<ProjectType>()
 const dialog = ref<boolean>(false)
@@ -111,3 +116,20 @@ watch(form, (val) => {
   }, { deep: true }
 )
 </script>
+
+<i18n>
+{
+  "en": {
+    "category": "Select categories",
+    "search": "Enter title",
+    "others": "others",
+    "notfound": "not found"
+  },
+  "ru": {
+    "category": "Выберите категорию",
+    "search": "Введите заголовок",
+    "others": "других",
+    "notfound": "не найдено"
+  }
+}
+</i18n>

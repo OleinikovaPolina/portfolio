@@ -23,6 +23,7 @@ export type LinkType = {
   readonly href: string,
   readonly icon?: string,
   readonly name?: string,
+  readonly color?: string
 }
 
 export type InfoType = {
@@ -32,8 +33,8 @@ export type InfoType = {
 }
 
 export type AchievementType = {
-  readonly title: string,
-  readonly content: string[],
+  title?: string,
+  content?: string[],
   readonly image: string,
   readonly file: string
 }
