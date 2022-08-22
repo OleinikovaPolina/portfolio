@@ -44,7 +44,6 @@
           </v-chip>
         </v-chip-group>
 
-        <!-- eslint-disable-next-line vue/no-v-html -->
         <div v-html="project.descriptionLong" />
 
         <v-divider class="my-4" />
@@ -56,14 +55,15 @@
             :href="link.href"
             target="_blank"
             :size="$vuetify.display.smAndDown?'small':'default'"
+            class="elevation-0 mr-2"
             color="info"
-            class="white--text mr-2"
             link
           >
             {{ link.name }}
           </v-btn>
           <v-btn
             color="info"
+            class="elevation-0"
             @click="$emit('changeDialog',false)"
           >
             Close

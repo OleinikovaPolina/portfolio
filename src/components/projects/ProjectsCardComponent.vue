@@ -28,14 +28,14 @@
           target="_blank"
           :size="$vuetify.display.smAndDown?'small':'default'"
           color="info"
-          class="white--text mr-2"
+          class="elevation-0 mr-2"
           link
         >
           {{ link.name }}
         </v-btn>
         <v-btn
-          class="white--text"
           color="info"
+          class="elevation-0"
           :size="$vuetify.display.smAndDown?'small':'default'"
           @click="()=>{
             $emit('changeDialog',true)

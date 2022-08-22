@@ -1,14 +1,11 @@
 <template>
-  <div
-    style="z-index: 0;position: relative"
-    class="hex-section"
-  >
+  <div class="hex-section section-background py-8 py-md-16 w-100 position-relative">
     <v-container style="position: relative;z-index: 10;">
       <v-col
         cols="10"
         sm="7"
         lg="6"
-        class=" text-center mx-auto text-h5 text-md-h4 text-lg-h3"
+        class="text-center mx-auto text-h5 text-md-h4 text-lg-h3"
       >
         {{ t('title') }}
       </v-col>
@@ -16,7 +13,7 @@
         cols="10"
         sm="7"
         lg="5"
-        class=" text-center mx-auto "
+        class="text-center mx-auto"
       >
         {{ t('subtitle') }}
       </v-col>
@@ -128,7 +125,6 @@
               class="mx-auto hex-img"
               :src="hex.img"
             />
-            <!-- eslint-disable vue/no-v-html -->
             <div
               class="hex-text subtitle-color"
               v-html="hex.name"
@@ -217,31 +213,7 @@ function hexHoverNot (i: number) {
 }
 
 .hex-section {
-  background-image: url("../../assets/images/sectionLight.svg");
-  width: 100%;
-  background-size: cover;
-  background-position: top left;
-  margin-top: -15em;
-  padding-top: 23em;
-  position: relative;
-  @media (max-width: 1904px) {
-    margin-top: -11em;
-    padding-top: 14em;
-  }
-  @media (max-width: 1280px) {
-    margin-top: -6em;
-    padding-top: 11em;
-  }
-  @media (max-width: 960px) {
-    background-position: 25% 0;
-    margin-top: -4em;
-    padding-top: 10em;
-  }
-  @media (max-width: 600px) {
-    background-position: 25% 0;
-    margin-top: -4.5em;
-    padding-top: 7em;
-  }
+  z-index: 0
 }
 
 .hex-container {

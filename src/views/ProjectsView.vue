@@ -13,9 +13,10 @@
             <v-text-field
               v-model="form.title"
               :label="t('search')"
-              variant="outlined"
               density="comfortable"
-              required
+              variant="outlined"
+              color="info"
+              single-line
             />
           </v-col>
           <v-col
@@ -25,8 +26,10 @@
               v-model="form.categories"
               :items="categories"
               :label="t('category')"
-              variant="outlined"
               density="comfortable"
+              variant="outlined"
+              color="info"
+              single-line
               multiple
               filled
               chips

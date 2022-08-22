@@ -5,13 +5,15 @@
     </div>
     <v-carousel
       height="auto"
+      :show-arrows="achievements.length>columns && $vuetify.display.mdAndUp"
+      :hide-delimiters="achievements.length<=columns"
       :hide-delimiter-background="true"
     >
       <template v-for="index in achievements.length">
         <v-carousel-item
           v-if="index % columns === 1 || columns === 1"
           :key="index"
-          class="px-16 mx-4 py-4"
+          class="px-md-16 mx-md-4 py-4"
         >
           <v-row
             class="flex-nowrap justify-center align-stretch"
@@ -78,6 +80,5 @@ const columns = computed(() => {
       return 1
   }
 })
-
 </script>
 

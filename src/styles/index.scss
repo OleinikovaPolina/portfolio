@@ -1,0 +1,118 @@
+li {
+  margin-left: 2em;
+}
+
+::-webkit-scrollbar {
+  width: 16px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #cbd5e0;
+  border-radius: 100vh;
+  border: 3px solid #edf2f7;
+}
+
+::-webkit-scrollbar-track {
+  border-radius: 100vh;
+  background: #edf2f7;
+}
+
+//nav
+.v-toolbar {
+  a {
+    color: var(--v-theme-on-background)
+  }
+}
+
+//typography
+.header-subtitle {
+  opacity: .75;
+  line-height: 1.75em;
+  font-size: 1em;
+  @media (min-width: 600px) {
+    line-height: 2em;
+    font-size: 1.25em;
+  }
+}
+
+// sections
+.section-background {
+  background-color: rgba(178, 197, 203, .15);
+}
+
+.section-header {
+  min-height: calc(100vh - 120px);
+  @media (min-width: 960px) {
+    min-height: calc(100vh - 64px)
+  }
+}
+
+// animation
+.fadein {
+  transform: translateY(150px);
+  opacity: 0;
+  transition: all 1s !important;
+}
+
+.fadein.active {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+// buttons
+//.btn {
+//  position: relative;
+//  padding: 7px 20px;
+//  color: white;
+//  font-size: 1em;
+//  font-weight: 500;
+//  line-height: 20px;
+//  background-size: 400% 100%;
+//  background-position: 0 0;
+//  background-image: linear-gradient(-45deg, white, white, #2E9CEF 70%, #2DC0C5 100%);
+//  border-width: 4px;
+//  border-style: solid;
+//  border-image: 1 linear-gradient(-45deg, #2E9CEF, #2DC0C5);
+//  transition: all .3s ease-in-out;
+//  box-shadow: 2px 2px 5px 2px rgba(0, 0, 0, 0.25);
+//  letter-spacing: 0.0892857143em;
+//}
+//
+//.btn:hover {
+//  background-position: 100% 0;
+//  transition: all .3s ease-in-out;
+//  color: #2E9CEF;
+//}
+//
+//.btn:before {
+//  content: '';
+//  position: absolute;
+//  height: 100%;
+//  width: 100%;
+//  top: 0;
+//  left: 0;
+//  box-shadow: inset 2px 2px 5px 2px rgba(0, 0, 0, 0.2);
+//  opacity: 0;
+//  transition: all .3s ease-in-out;
+//}
+//
+//.btn:hover:before {
+//  opacity: 1;
+//  transition: all .3s ease-in-out;
+//}
+//
+//.btn:active {
+//  border-image: 1 linear-gradient(-45deg, #1782d3, #2DC0C5);
+//  transition: all .1s ease-in-out;
+//  color: #1782d3
+//}
+
+//.v-btn.btn-grad {
+//  background-image: linear-gradient(to right, #2DC0C5 0%, #2E9CEF  51%, #2DC0C5  100%) !important;
+//  background-size: 200% auto;
+//  color: white;
+//}
+//
+//.v-btn.btn-grad:hover {
+//  background-position: right center;
+//}
