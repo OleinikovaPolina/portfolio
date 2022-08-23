@@ -1,5 +1,13 @@
 <template>
-  <div class="py-8 py-md-16">
+  <div class="py-8 py-md-16 position-relative">
+    <div>
+      <animation-item-component :style="{color:'#f1f1f1',width:'25px',top:'5%',left:'5%'}" />
+      <animation-item-component :style="{color:'#b0e0ff',width:'20px',top:'20%',left:'0'}" />
+      <animation-item-component :style="{color:'#f1f1f1',width:'15px',top:'10%',left:'15%'}" />
+      <animation-item-component :style="{color:'#f1f1f1',width:'25px',bottom:'0',right:'8%'}" />
+      <animation-item-component :style="{color:'#b0e0ff',width:'20px',bottom:'15%',right:'0%'}" />
+      <animation-item-component :style="{color:'#edd8ff',width:'15px',bottom:'20%',right:'10%'}" />
+    </div>
     <div class="text-h5 text-md-h4 text-lg-h3 mx-auto text-center pb-4 pb-md-8">
       {{ $t('achievementsTitle') }}
     </div>
@@ -61,6 +69,7 @@
 import { computed } from 'vue'
 import { useDisplay } from 'vuetify'
 import { useStore } from 'vuex'
+import AnimationItemComponent from '@/components/app/AnimationItemComponent.vue'
 
 const store = useStore()
 const achievements = computed(() => store.getters['info/achievements'])

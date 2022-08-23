@@ -17,10 +17,13 @@ export const state: State = {
   ],
   skills: [
     { name: 'Nuxt.js', img: require('@/assets/images/skills/nuxt.png') },
-    { name: 'Vue 2<br>Vue 3', img: require('@/assets/images/skills/vue.png') },
-    { name: 'Typescript<br>Javascript', img: require('@/assets/images/skills/jts.png') },
-    { name: 'Vuetify<br>Bootstrap', img: require('@/assets/images/skills/vuetify.png') },
-    { name: 'Sass<br>Css', img: require('@/assets/images/skills/sass.png') },
+    { name: 'Vue 2, 3', img: require('@/assets/images/skills/vue.png') },
+    { name: 'Typescript', img: require('@/assets/images/skills/jts.png') },
+    { name: 'Javascript', img: require('@/assets/images/skills/jts.png') },
+    { name: 'Vuetify', img: require('@/assets/images/skills/vuetify.png') },
+    { name: 'Bootstrap', img: require('@/assets/images/skills/vuetify.png') },
+    { name: 'Sass', img: require('@/assets/images/skills/sass.png') },
+    { name: 'Css', img: require('@/assets/images/skills/sass.png') },
     { name: 'Html5', img: require('@/assets/images/skills/html.png') }
   ]
 }

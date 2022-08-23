@@ -5,18 +5,9 @@
     class="section-header position-relative"
   >
     <div>
-      <div
-        style="border-radius: 50%;width: 20px;height: 20px;
-border: 2px solid rgba(0,0,0,0.3);position: absolute;top:10px;left: 10px"
-      />
-      <div
-        style="border-radius: 50%;width: 10px;height: 10px;
-border: 1px solid rgb(125,200,252);position: absolute;top:80px;left: 80px"
-      />
-      <div
-        style="border-radius: 50%;width: 15px;height: 15px;
-border: 2px solid rgba(33,150,243,0.3);position: absolute;top:60px;left: 0"
-      />
+      <animation-item-component :style="{color:'#f1f1f1',width:'25px',top:0,left:'20px'}" />
+      <animation-item-component :style="{color:'#f1f1f1',width:'20px',top:'30px',left:'100px'}" />
+      <animation-item-component :style="{color:'#b0e0ff',width:'15px',top:'55px',left:'-20px'}" />
     </div>
     <v-col
       cols="12"
@@ -24,18 +15,9 @@ border: 2px solid rgba(33,150,243,0.3);position: absolute;top:60px;left: 0"
       class="text-center text-md-left position-relative"
     >
       <div>
-        <div
-          style="border-radius: 50%;width: 20px;height: 20px;
-border: 2px solid rgba(0,0,0,0.3);position: absolute;bottom:-20px;right: 10px"
-        />
-        <div
-          style="border-radius: 50%;width: 10px;height: 10px;
-border: 1px solid rgb(125,200,252);position: absolute;bottom:20px;right: 80px"
-        />
-        <div
-          style="border-radius: 50%;width: 15px;height: 15px;
-border: 2px solid rgba(33,150,243,0.3);position: absolute;bottom:10px;right: 0"
-        />
+        <animation-item-component :style="{color:'#f1f1f1',width:'25px',bottom:'0',right:'8%'}" />
+        <animation-item-component :style="{color:'#b0e0ff',width:'20px',bottom:'15%',right:0}" />
+        <animation-item-component :style="{color:'#edd8ff',width:'15px',bottom:'20%',right:'20%'}" />
       </div>
       <div class="d-flex align-center justify-center justify-md-start mb-4">
         <div class="text-h4 text-md-h3 text-lg-h2 mr-2 mr-md-4 font-weight-regular">
@@ -113,6 +95,7 @@ border: 2px solid rgba(33,150,243,0.3);position: absolute;bottom:10px;right: 0"
 </template>
 
 <script setup lang="ts">
+import AnimationItemComponent from '@/components/app/AnimationItemComponent.vue'
 import { useI18n } from 'vue-i18n'
 import { useStore } from 'vuex'
 import { computed } from 'vue'
