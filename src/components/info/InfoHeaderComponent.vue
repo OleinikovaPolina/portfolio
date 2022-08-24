@@ -5,9 +5,9 @@
     class="section-header position-relative"
   >
     <div>
-      <animation-item-component :style="{color:'#f1f1f1',width:'25px',top:0,left:'20px'}" />
-      <animation-item-component :style="{color:'#f1f1f1',width:'20px',top:'30px',left:'100px'}" />
-      <animation-item-component :style="{color:'#b0e0ff',width:'15px',top:'55px',left:'-20px'}" />
+      <animation-item-component :style="{color:'#f1f1f1',width:'20px',top:0,left:'20px'}" />
+      <animation-item-component :style="{color:'#f1f1f1',width:'15px',top:'30px',left:'100px'}" />
+      <animation-item-component :style="{color:'#b0e0ff',width:'10px',top:'55px',left:'-20px'}" />
     </div>
     <v-col
       cols="12"
@@ -15,9 +15,9 @@
       class="text-center text-md-left position-relative"
     >
       <div>
-        <animation-item-component :style="{color:'#f1f1f1',width:'25px',bottom:'0',right:'8%'}" />
-        <animation-item-component :style="{color:'#b0e0ff',width:'20px',bottom:'15%',right:0}" />
-        <animation-item-component :style="{color:'#edd8ff',width:'15px',bottom:'20%',right:'20%'}" />
+        <animation-item-component :style="{color:'#f1f1f1',width:'20px',bottom:'0',right:'8%'}" />
+        <animation-item-component :style="{color:'#b0e0ff',width:'15px',bottom:'15%',right:0}" />
+        <animation-item-component :style="{color:'#edd8ff',width:'10px',bottom:'20%',right:'20%'}" />
       </div>
       <div class="d-flex align-center justify-center justify-md-start mb-4">
         <div class="text-h4 text-md-h3 text-lg-h2 mr-2 mr-md-4 font-weight-regular">
@@ -145,13 +145,13 @@ const socials = computed(() => store.getters['contacts/socials'])
 {
   "en": {
     "title": "Hi all, I'm Polina",
-    "subtitle": "A passionate Frontend Developer 🚀 having an experience of building Web applications with TypeScript / JavaScript / Vuejs / Nuxtjs and some other cool libraries and frameworks.",
+    "subtitle": "A passionate Frontend Developer having an experience of building Web applications with TypeScript / JavaScript / Vuejs / Nuxtjs and some other cool libraries and frameworks.",
     "contact": "contact me",
     "resume": "resume"
   },
   "ru": {
     "title": "Привет, я Полина!",
-    "subtitle": "Увлеченный фронтенд разработчик 🚀, имеющий опыт создания веб-приложений с помощью TypeScript / JavaScript / Vuejs / Nuxtjs и некоторых других интересных библиотек и фреймворков.",
+    "subtitle": "Увлеченный фронтенд разработчик, имеющий опыт создания веб-приложений с помощью TypeScript / JavaScript / Vuejs / Nuxtjs и некоторых других интересных библиотек и фреймворков.",
     "contact": "связаться",
     "resume": "резюме"
   }
