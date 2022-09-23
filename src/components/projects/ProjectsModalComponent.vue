@@ -6,14 +6,17 @@
     <v-card
       class="mx-auto"
       max-width="700"
+      width="90vw"
     >
       <div>
         <v-carousel
           :cycle="false"
           :hide-delimiter-background="true"
+          :show-arrows="!$vuetify.display.smAndDown"
           delimiter-icon="mdi-minus"
-          height="300"
+          height="auto"
           eager
+          style="aspect-ratio: 2.19"
         >
           <v-carousel-item
             v-for="(slide, i) in project.images"
@@ -21,6 +24,8 @@
           >
             <v-img
               :src="slide"
+              width="100%"
+              aspect-ratio="2.19"
             />
           </v-carousel-item>
         </v-carousel>
@@ -35,10 +40,11 @@
           Categories:&nbsp;<span>{{ project.categories.join(', ') }}</span>
         </div>
 
-        <v-chip-group>
+        <v-chip-group :column="true">
           <v-chip
             v-for="technology in project.technologies"
             :key="technology.name"
+            :size="$vuetify.display.smAndDown?'x-small':'small'"
           >
             {{ technology.name }}
           </v-chip>

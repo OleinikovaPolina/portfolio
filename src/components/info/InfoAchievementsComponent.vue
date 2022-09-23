@@ -35,7 +35,6 @@
                 >
                   <v-card class="fill-height">
                     <v-img
-                      class="rounded-t"
                       :src="achievements[index + i - 2].image"
                       :cover="true"
                       height="100px"

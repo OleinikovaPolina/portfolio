@@ -1,6 +1,11 @@
 <template>
   <v-card>
-    <v-img :src="project.images[0]" />
+    <img
+      alt=""
+      :src="project.images[0]"
+      style="aspect-ratio: 2.19"
+      class="w-100"
+    >
 
     <v-card-title>{{ project.title }}</v-card-title>
 
@@ -11,13 +16,13 @@
     <v-divider class="mx-4" />
 
     <v-card-text class="pt-1">
-      <v-chip-group active-class="deep-purple accent-4 white--text">
+      <v-chip-group column>
         <v-chip
-          v-for="technology in project.technologies"
-          :key="technology.name"
-          :size="$vuetify.display.smAndDown?'small':'small'"
+          v-for="i in Math.min(project.technologies.length,4)"
+          :key="project.technologies[i-1].name"
+          :size="$vuetify.display.smAndDown?'x-small':'small'"
         >
-          {{ technology.name }}
+          {{ project.technologies[i - 1].name }}
         </v-chip>
       </v-chip-group>
       <div class="d-flex mt-1">

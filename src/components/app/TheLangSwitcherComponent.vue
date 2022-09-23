@@ -1,5 +1,5 @@
 <template>
-  <v-menu>
+  <v-menu class="lang-switcher">
     <template #activator="{ props }">
       <v-btn
         v-bind="props"

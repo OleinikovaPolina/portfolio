@@ -1,5 +1,9 @@
-li {
-  margin-left: 2em;
+html {
+  cursor: url("../assets/images/Color_Stroke_Cursor.png"), default;
+}
+
+a, button, label, a *, button *, label *, .v-list-item, .v-chip__close {
+  cursor: url("../assets/images/Color_Stroke_Pointer.png"), pointer !important;
 }
 
 ::-webkit-scrollbar {
@@ -17,12 +21,20 @@ li {
   background: #edf2f7;
 }
 
-html .v-card {
+html .v-row .v-card {
   border-radius: 15px;
 }
 
+.v-row .v-card .v-img, .v-row .v-card img {
+  border-radius: 15px 15px 0 0;
+}
+
+ul li, ul ul {
+  margin-left: 2em;
+}
+
 //nav
-.v-overlay__content {
+.lang-switcher .v-overlay__content {
   transform: translate(-60%, 5px);
 }
 

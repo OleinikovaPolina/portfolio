@@ -51,7 +51,7 @@ window.onscroll = function () {
   left: 1em;
   transform: rotate(135deg);
   border-width: 0 0 0.2em 0.2em;
-  border-color: var(--v-theme-on-background);
+  border-color: rgb(var(--v-theme-info));
   border-style: solid;
   border-radius: 0;
 }

@@ -34,7 +34,7 @@
               filled
               chips
               closable-chips
-              :no-data-text="t('notfound')"
+              :no-data-text="t('nodata')"
             >
               <template #chip="{ props, selection }">
                 <v-chip
@@ -57,7 +57,7 @@
         </v-row>
       </v-col>
     </v-row>
-    <v-row align="stretch">
+    <v-row style="min-height: 70vh;">
       <v-col
         v-for="(project ,i ) in projects"
         :key="i"
@@ -71,6 +71,20 @@
           @changeDialog="changeDialog"
           @changeActiveProject="changeActiveProject"
         />
+      </v-col>
+      <v-col
+        v-if="!projects.length"
+        cols="12"
+        md="4"
+        class="mx-auto"
+      >
+        <v-img
+          src="@/assets/images/undraw_searching.svg"
+          class="mx-auto"
+        />
+        <div class="text-center">
+          {{ t('nodata') }}
+        </div>
       </v-col>
     </v-row>
     <projects-modal-component
@@ -126,13 +140,13 @@ watch(form, (val) => {
     "category": "Select categories",
     "search": "Enter title",
     "others": "others",
-    "notfound": "not found"
+    "nodata": "no data"
   },
   "ru": {
     "category": "Выберите категорию",
     "search": "Введите заголовок",
     "others": "других",
-    "notfound": "не найдено"
+    "nodata": "не найдено"
   }
 }
 </i18n>
