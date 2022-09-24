@@ -20,12 +20,17 @@ import NavComponent from '@/components/app/NavComponent.vue'
 import NavBottomComponent from '@/components/app/NavBottomComponent.vue'
 import FooterComponent from '@/components/app/FooterComponent.vue'
 
-import { computed, onMounted } from 'vue'
+import { computed, onMounted, watch } from 'vue'
 import { useStore } from 'vuex'
 import TheButtonBackToTopComponent from '@/components/app/TheButtonBackToTopComponent.vue'
 
 const store = useStore()
 const theme = computed(() => store.getters['application/theme'])
+
+watch(theme, () => {
+  document.documentElement.classList.toggle('v-theme--light')
+  document.documentElement.classList.toggle('v-theme--dark')
+})
 
 let height = document.documentElement.clientHeight
 
@@ -41,8 +46,10 @@ function fadein () {
 }
 
 onMounted(() => {
+  document.documentElement.classList.add(theme.value === 'light' ? 'v-theme--light' : 'v-theme--dark')
   fadein()
 })
+
 window.addEventListener('scroll', () => {
   fadein()
 })

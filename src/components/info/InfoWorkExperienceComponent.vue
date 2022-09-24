@@ -20,7 +20,7 @@
             :icon="i===0?'mdi-motion-play-outline':'mdi-motion-pause-outline'"
             :fill-dot="true"
           >
-            <v-card class="mb-4 mb-md-0 fadein">
+            <v-card class="mb-4 mb-md-0 fadein bg-bg">
               <v-card-title class="pb-0">
                 {{ rt(item.name) }}
               </v-card-title>

@@ -1,7 +1,7 @@
 <template>
   <div
     id="graduate"
-    class="graduate-container"
+    class="graduate-container cursor-pointer"
     @click="flight"
   >
     <div id="five">
@@ -352,7 +352,6 @@ function flight () {
   @media (min-width: 960px) {
     height: 100%;
   }
-  cursor: pointer;
 }
 
 .position-absolute {
