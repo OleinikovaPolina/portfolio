@@ -100,7 +100,7 @@
 import ProjectsHeaderComponent from '@/components/projects/ProjectsHeaderComponent.vue'
 import ProjectsCardComponent from '@/components/projects/ProjectsCardComponent.vue'
 import ProjectsModalComponent from '@/components/projects/ProjectsModalComponent.vue'
-import { onMounted, ref, watch } from 'vue'
+import { computed, ref } from 'vue'
 import { useStore } from 'vuex'
 import { useI18n } from 'vue-i18n'
 import { ProjectType } from '@/types'
@@ -116,22 +116,13 @@ const { t } = useI18n({
   inheritLocale: true,
   useScope: 'local'
 })
-const projects = ref<ProjectType[]>([])
+const projects =computed(() => store.getters['projects/projects'](form.value.categories, form.value.title))
 const activeProject = ref<ProjectType>()
 const dialog = ref<boolean>(false)
 const form = ref<FormType>({ categories: [], title: '' })
 
 const changeDialog = (val: boolean) => dialog.value = val
 const changeActiveProject = (val: ProjectType) => activeProject.value = val
-
-onMounted(() => {
-  projects.value = store.getters['projects/projects']()
-})
-
-watch(form, (val) => {
-    projects.value = store.getters['projects/projects'](val.categories, val.title)
-  }, { deep: true }
-)
 </script>
 
 <i18n>

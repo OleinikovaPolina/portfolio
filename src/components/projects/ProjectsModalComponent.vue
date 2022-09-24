@@ -32,7 +32,7 @@
       </div>
 
       <v-card-title class="px-6 pb-0">
-        {{ project.title }}
+        {{ $rt(project.title) }}
       </v-card-title>
 
       <v-card-text class="pt-0">
@@ -50,7 +50,7 @@
           </v-chip>
         </v-chip-group>
 
-        <div v-html="project.descriptionLong" />
+        <div v-html=" $rt(project.descriptionLong)" />
 
         <v-divider class="my-4" />
 

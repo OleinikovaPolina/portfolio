@@ -1,6 +1,6 @@
 import { GetterTree } from 'vuex'
 
-import type { AchievementType, InfoType, TechnologyType } from '@/types'
+import type { AchievementType, TechnologyType } from '@/types'
 
 import { RootState } from '@/store'
 import { State } from './state'

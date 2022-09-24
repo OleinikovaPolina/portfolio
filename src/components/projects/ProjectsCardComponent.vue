@@ -7,10 +7,10 @@
       class="w-100"
     >
 
-    <v-card-title>{{ project.title }}</v-card-title>
+    <v-card-title>{{ $rt(project.title) }}</v-card-title>
 
     <v-card-text class="py-1">
-      <div>{{ project.descriptionShort }}</div>
+      <div>{{$rt(project.descriptionShort) }}</div>
     </v-card-text>
 
     <v-divider class="mx-4" />

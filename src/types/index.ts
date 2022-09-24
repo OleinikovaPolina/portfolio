@@ -10,9 +10,9 @@ export type TechnologyType = {
 }
 
 export type ProjectType = {
-  readonly title: string,
-  readonly descriptionShort: string,
-  readonly descriptionLong: string,
+  title?: string,
+  descriptionShort?: string,
+  descriptionLong?: string,
   readonly technologies: TechnologyType[],
   readonly images: string[],
   readonly categories: string[],
