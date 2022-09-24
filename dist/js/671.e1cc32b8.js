@@ -1,0 +1,2 @@
+"use strict";(self["webpackChunkportfolio"]=self["webpackChunkportfolio"]||[]).push([[671],{4671:function(n,r,e){e.r(r),e.d(r,{default:function(){return a}});var o=e(3396);function t(n,r,e,t,u,f){return(0,o.wg)(),(0,o.iD)("p",null,"404")}var u={name:"NotFoundView"},f=e(89);const i=(0,f.Z)(u,[["render",t]]);var a=i}}]);
+//# sourceMappingURL=671.e1cc32b8.js.map
