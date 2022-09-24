@@ -69,15 +69,15 @@
             mdi-arrow-right-bold-outline
           </v-icon>
         </v-btn>
-        <v-btn
-          class="elevation-0"
-          color="info"
-        >
-          {{ t('resume') }}
-          <v-icon class="ml-1">
-            mdi-file-download-outline
-          </v-icon>
-        </v-btn>
+        <!--        <v-btn-->
+        <!--          class="elevation-0"-->
+        <!--          color="info"-->
+        <!--        >-->
+        <!--          {{ t('resume') }}-->
+        <!--          <v-icon class="ml-1">-->
+        <!--            mdi-file-download-outline-->
+        <!--          </v-icon>-->
+        <!--        </v-btn>-->
       </div>
     </v-col>
     <v-col

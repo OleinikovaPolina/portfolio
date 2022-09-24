@@ -78,11 +78,9 @@ const { t, tm, rt } = useI18n({
     "title": "Work experience",
     "work": [
       {
-        "name": "Information Development Department ITMO",
+        "name": "ITMO's Department of Information Systems",
         "date": "Sep 2022 - Present",
-        "content": [
-          "my.itmo"
-        ]
+        "content": []
       },
       {
         "name": "Project activity",
@@ -98,11 +96,9 @@ const { t, tm, rt } = useI18n({
     "title": "Опыт работы",
     "work": [
       {
-        "name": "Департамент информационного развития ИТМО",
+        "name": "Департамент информационных систем ИТМО",
         "date": "Сентябрь 2022 - Настоящее время",
-        "content": [
-          "my.itmo"
-        ]
+        "content": []
       },
       {
         "name": "Проектная деятельность",

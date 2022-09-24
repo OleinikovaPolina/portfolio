@@ -15,8 +15,7 @@
     {
       "title": "IT school samsung. Free mobile development education program for high school students.",
       "content": [
-        "2018-2019 Academic Year",
-        "Graduation Project - Can't Remember"
+        "2018-2019 Academic Year"
       ]
     }
   ],
@@ -66,5 +65,8 @@
       "descriptionShort": "",
       "descriptionLong": ""
     }
-  ]
+  ],
+  "hi": "Say Hi, it's free)",
+  "more": "More",
+  "View demo": "View Demo"
 }
