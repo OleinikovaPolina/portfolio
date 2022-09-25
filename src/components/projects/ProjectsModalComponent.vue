@@ -70,9 +70,10 @@
           <v-btn
             color="info"
             class="elevation-0"
+            :size="$vuetify.display.smAndDown?'small':'default'"
             @click="$emit('changeDialog',false)"
           >
-            Close
+            {{ $t('close') }}
           </v-btn>
         </div>
       </v-card-text>

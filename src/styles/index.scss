@@ -31,7 +31,10 @@ html .v-row .v-card {
 }
 
 ul li, ul ul {
-  margin-left: 2em;
+  margin-left: 1em;
+  @media (min-width: 960px) {
+    margin-left: 2em;
+  }
 }
 
 //nav
@@ -87,8 +90,8 @@ ul li, ul ul {
   }
 }
 
-.bg-bg{
-  background-color: rgb(var(--v-theme-background))!important;
+.bg-bg {
+  background-color: rgb(var(--v-theme-background)) !important;
 }
 
 // animation

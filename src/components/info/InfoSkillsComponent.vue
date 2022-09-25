@@ -22,7 +22,7 @@
           cols="12"
           md="8"
         >
-          <div class="d-flex flex-wrap justify-center">
+          <div class="d-flex flex-wrap justify-center overflow-hidden">
             <div
               v-for="(hex,i) in skills"
               :key="i"
@@ -173,6 +173,11 @@ const hexHoverNot = (i: number) => {
   transition: all .3s ease-in-out;
   aspect-ratio: 1;
 
+  @media(min-width: 960px){
+    width: 20%;
+
+  }
+
   * {
     transition: all .3s ease-in-out;
   }
@@ -199,7 +204,11 @@ const hexHoverNot = (i: number) => {
   .hex-content {
     position: relative;
     z-index: 1;
-    transform: translateY(35%);
+    transform: translateY(25%);
+
+    @media (min-width: 960px) {
+      transform: translateY(35%);
+    }
 
     .hex-content-img {
       aspect-ratio: 1;

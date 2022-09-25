@@ -389,5 +389,10 @@ function flight () {
     font-family: cursive;
     color: initial;
   }
+
+  font-size: 9px;
+  @media (min-width: 960px) {
+    font-size: 14px;
+  }
 }
 </style>
