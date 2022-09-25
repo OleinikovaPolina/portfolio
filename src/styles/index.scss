@@ -37,6 +37,11 @@ ul li, ul ul {
   }
 }
 
+//main
+.v-main {
+  min-height: 100vh;
+}
+
 //nav
 .lang-switcher .v-overlay__content {
   transform: translate(-60%, 5px);

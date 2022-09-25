@@ -1,5 +1,5 @@
 <template>
-  <div class="py-8 py-md-16 position-relative">
+  <div class="pt-8 pt-md-16 position-relative">
     <div>
       <animation-item-component :style="{color:'#f1f1f1',width:'25px',top:'5%',left:'5%'}" />
       <animation-item-component :style="{color:'#b0e0ff',width:'20px',top:'20%',left:'0'}" />

@@ -1,16 +1,18 @@
 <template>
   <v-app :theme="theme">
-    <nav-component />
+    <div>
+      <nav-component />
+
+      <v-main>
+        <router-view />
+        <the-button-back-to-top-component />
+      </v-main>
+
+      <v-footer app>
+        <footer-component />
+      </v-footer>
+    </div>
     <nav-bottom-component v-if="$vuetify.display.smAndDown" />
-
-    <v-main style="min-height: 100vh">
-      <router-view />
-      <the-button-back-to-top-component />
-    </v-main>
-
-    <v-footer app>
-      <footer-component />
-    </v-footer>
   </v-app>
 </template>
 

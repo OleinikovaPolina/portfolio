@@ -1,5 +1,9 @@
 <template>
-  <v-bottom-navigation color="info">
+  <v-bottom-navigation
+    class="position-sticky"
+    style="bottom: 0"
+    color="info"
+  >
     <v-btn
       v-for="link in links"
       :key="link.path"
