@@ -19,7 +19,13 @@ export const state: State = {
         { name: 'Vue-croppie' }, { name: 'Vue2-editor' }
       ],
       images: [
-        require('@/assets/images/projects/12.png')
+        require('@/assets/images/projects/fict/fict.png'),
+        require('@/assets/images/projects/fict/fict1.png'),
+        require('@/assets/images/projects/fict/fict2.png'),
+        require('@/assets/images/projects/fict/fict3.png'),
+        require('@/assets/images/projects/fict/fict4.png'),
+        require('@/assets/images/projects/fict/fict5.png'),
+        require('@/assets/images/projects/fict/fict6.png')
       ],
       categories: ['vue', 'animation', 'javascript'],
       links: [
@@ -33,7 +39,12 @@ export const state: State = {
         { name: 'Bootstrap' }
       ],
       images: [
-        require('@/assets/images/projects/retro.png')
+        require('@/assets/images/projects/retro/retro1.png'),
+        require('@/assets/images/projects/retro/retro2.png'),
+        require('@/assets/images/projects/retro/retro3.png'),
+        require('@/assets/images/projects/retro/retro4.png'),
+        require('@/assets/images/projects/retro/retro5.png'),
+        require('@/assets/images/projects/retro/retro6.png')
       ],
       categories: ['javascript', 'animation', 'pet-project'],
       links: [
@@ -49,7 +60,13 @@ export const state: State = {
         { name: 'Vue-moment' }, { name: 'Axios' }
       ],
       images: [
-        require('@/assets/images/projects/img_7.png')
+        require('@/assets/images/projects/projectControl/projectControl 6.png'),
+        require('@/assets/images/projects/projectControl/projectControl3.jpg'),
+        require('@/assets/images/projects/projectControl/projectControl 4.png'),
+        require('@/assets/images/projects/projectControl/projectControl 8.png'),
+        require('@/assets/images/projects/projectControl/projectControl 5.png'),
+        require('@/assets/images/projects/projectControl/projectControl1.png'),
+        require('@/assets/images/projects/projectControl/projectControl 7.png'),
       ],
       categories: ['vue', 'typescript', 'pet-project'],
       links: [{ name: 'github', href: 'https://github.com/OleinikovaPolina/ProjectControl' }]
@@ -61,7 +78,9 @@ export const state: State = {
         { name: 'Vue-moment' }, { name: 'Axios' }, { name: 'PWA' }
       ],
       images: [
-        require('@/assets/images/projects/41.png')
+        require('@/assets/images/projects/weather/weather1.png'),
+        require('@/assets/images/projects/weather/weather2.png'),
+        require('@/assets/images/projects/weather/weather3.png')
       ],
       categories: ['vue', 'typescript', 'pet-project'],
       links: [
@@ -78,7 +97,10 @@ export const state: State = {
         { name: 'Vue-moment' }, { name: 'Axios' }
       ],
       images: [
-        require('@/assets/images/projects/img2.png')
+        require('@/assets/images/projects/tracker/tracker1.png'),
+        require('@/assets/images/projects/tracker/tracker2.png'),
+        require('@/assets/images/projects/tracker/tracker3.png'),
+        require('@/assets/images/projects/tracker/tracker4.png')
       ],
       categories: ['vue', 'typescript', 'pet-project'],
       links: [
@@ -92,7 +114,10 @@ export const state: State = {
         { name: 'Vue-router' }, { name: 'Axios' }, { name: 'PWA' }
       ],
       images: [
-        require('@/assets/images/projects/ram.png')
+        require('@/assets/images/projects/rick/rick.png'),
+        require('@/assets/images/projects/rick/rick1.png'),
+        require('@/assets/images/projects/rick/rick2.png'),
+        require('@/assets/images/projects/rick/rick3.png'),
       ],
       categories: ['vue', 'javascript', 'pet-project'],
       links: [
@@ -106,7 +131,10 @@ export const state: State = {
         { name: 'React-router-dom' }, { name: 'Axios' }, { name: 'pwa' }
       ],
       images: [
-        require('@/assets/images/projects/safs.png')
+        require('@/assets/images/projects/superapp/superapp1.png'),
+        require('@/assets/images/projects/superapp/superapp2.png'),
+        require('@/assets/images/projects/superapp/superapp3.png'),
+        require('@/assets/images/projects/superapp/superapp4.png'),
       ],
       categories: ['javascript', 'pet-project'],
       links: [{ name: 'View demo', href: 'https://oleinikovapolina.github.io/SuperAppForStudentsDemo/#/' }]
@@ -117,7 +145,15 @@ export const state: State = {
         { name: 'bootstrap' }, { name: 'Javascript' }
       ],
       images: [
-        require('@/assets/images/projects/an.png')
+        require('@/assets/images/projects/alex/alex1.png'),
+        require('@/assets/images/projects/alex/alex2.png'),
+        require('@/assets/images/projects/alex/alex3.png'),
+        require('@/assets/images/projects/alex/alex4.png'),
+        require('@/assets/images/projects/alex/alex5.png'),
+        require('@/assets/images/projects/alex/alex6.png'),
+        require('@/assets/images/projects/alex/alex7.png'),
+        require('@/assets/images/projects/alex/alex8.png'),
+        require('@/assets/images/projects/alex/alex9.png'),
       ],
       categories: ['animation', 'javascript'],
       links: [
@@ -131,7 +167,15 @@ export const state: State = {
         { name: 'Bootstrap' }, { name: 'Javascript' }
       ],
       images: [
-        require('@/assets/images/projects/20.png')
+        require('@/assets/images/projects/eTesting/eTesting1.png'),
+        require('@/assets/images/projects/eTesting/eTesting2.png'),
+        require('@/assets/images/projects/eTesting/eTesting3.png'),
+        require('@/assets/images/projects/eTesting/eTesting4.png'),
+        require('@/assets/images/projects/eTesting/eTesting5.png'),
+        require('@/assets/images/projects/eTesting/eTesting6.png'),
+        require('@/assets/images/projects/eTesting/eTesting7.png'),
+        require('@/assets/images/projects/eTesting/eTesting8.png'),
+        require('@/assets/images/projects/eTesting/eTesting9.png'),
       ],
       categories: ['vue', 'javascript', 'pet-project'],
       links: []
@@ -142,7 +186,10 @@ export const state: State = {
         { name: 'Bootstrap' }, { name: 'Javascript' }
       ],
       images: [
-        require('@/assets/images/projects/pr.png')
+        require('@/assets/images/projects/enrollee/enrollee1.png'),
+        require('@/assets/images/projects/enrollee/enrollee2.png'),
+        require('@/assets/images/projects/enrollee/enrollee3.png'),
+        require('@/assets/images/projects/enrollee/enrollee4.png'),
       ],
       categories: ['animation', 'javascript'],
       links: []
