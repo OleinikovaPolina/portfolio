@@ -3,8 +3,7 @@
     <img
       alt=""
       :src="project.images[0]"
-      style="aspect-ratio: 2.19;object-fit: contain"
-      class="w-100"
+      class="w-100 project-img"
     >
 
     <v-card-title>{{ $rt(project.title) }}</v-card-title>
@@ -65,3 +64,13 @@ defineProps({
   }
 })
 </script>
+
+<style scoped lang="scss">
+  .project-img {
+    aspect-ratio: 2.19;
+    object-fit: contain;
+    filter: contrast(110%) grayscale(0.5);
+    //border-bottom: 2px solid rgba(var(--v-theme-on-background),0.3);
+    box-shadow: 0 4px 5px -5px rgba(var(--v-theme-on-background),0.5);
+  }
+</style>

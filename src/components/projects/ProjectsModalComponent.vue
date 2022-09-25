@@ -12,7 +12,7 @@
         <v-carousel
           :cycle="false"
           :hide-delimiter-background="true"
-          :show-arrows="!$vuetify.display.smAndDown"
+          :show-arrows="!$vuetify.display.smAndDown?'hover':false"
           delimiter-icon="mdi-minus"
           height="auto"
           eager
