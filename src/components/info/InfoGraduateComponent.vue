@@ -390,7 +390,7 @@ function flight () {
     color: initial;
   }
 
-  font-size: 9px;
+  font-size: 10px;
   @media (min-width: 960px) {
     font-size: 14px;
   }

@@ -20,6 +20,8 @@
         <v-btn
           class="mr-4 elevation-0"
           color="info"
+          target="_blank"
+          href="https://github.com/OleinikovaPolina"
         >
           GITHUB
         </v-btn>

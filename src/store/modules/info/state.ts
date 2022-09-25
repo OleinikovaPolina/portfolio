@@ -21,7 +21,7 @@ export const state: State = {
     { name: 'Typescript', img: require('@/assets/images/skills/ts.png') },
     { name: 'Javascript', img: require('@/assets/images/skills/js.png') },
     { name: 'Vuetify', img: require('@/assets/images/skills/vuetify.png') },
-    { name: 'Vue-bootstrap', img: require('@/assets/images/skills/vue-bootstrap.png') },
+    { name: 'Bootstrap', img: require('@/assets/images/skills/vue-bootstrap.png') },
     { name: 'Sass', img: require('@/assets/images/skills/sass.png') },
     { name: 'Css', img: require('@/assets/images/skills/css.png') },
     { name: 'Html5', img: require('@/assets/images/skills/html.png') }

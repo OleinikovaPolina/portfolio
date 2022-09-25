@@ -1,5 +1,5 @@
 <template>
-  <div class="section-background py-8 py-md-16">
+  <div class="section-background py-md-8">
     <v-container>
       <v-col
         cols="10"
@@ -22,7 +22,7 @@
           cols="12"
           md="8"
         >
-          <div class="d-flex flex-wrap justify-center overflow-hidden">
+          <div class="d-flex flex-wrap justify-center overflow-hidden py-8">
             <div
               v-for="(hex,i) in skills"
               :key="i"
@@ -205,9 +205,11 @@ const hexHoverNot = (i: number) => {
     position: relative;
     z-index: 1;
     transform: translateY(25%);
+    font-size: 9px;
 
     @media (min-width: 960px) {
       transform: translateY(35%);
+      font-size: 16px;
     }
 
     .hex-content-img {
