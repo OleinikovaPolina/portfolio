@@ -3,7 +3,7 @@
     <img
       alt=""
       :src="project.images[0]"
-      style="aspect-ratio: 2.19"
+      style="aspect-ratio: 2.19;object-fit: contain"
       class="w-100"
     >
 

@@ -24,24 +24,21 @@ export const state: State = {
       categories: ['vue', 'animation', 'javascript'],
       links: [
         { name: 'github', href: 'https://github.com/OleinikovaPolina/ict.itmo' },
-        {name: 'View demo',href:'https://fict.itmo.ru/'}
+        { name: 'View demo', href: 'https://fict.itmo.ru/' }
       ]
     },
     {
       technologies: [
-        { name: 'Vue' }, { name: 'Vuex' },
-        { name: 'Typescript' }, { name: 'Vuetify' },
-        { name: 'Vue-router' }, { name: 'Vuex-smart-module' },
-        { name: 'Vue2-editor' }, { name: 'Vuedraggable' },
-        { name: 'Vue-moment' }, { name: 'Axios' }
+        { name: 'HTML' }, { name: 'Javascript' }, { name: 'CSS' },
+        { name: 'Bootstrap' }
       ],
       images: [
-        require('@/assets/images/projects/img2.png')
+        require('@/assets/images/projects/retro.png')
       ],
-      categories: ['vue', 'typescript', 'pet-project'],
+      categories: ['javascript', 'animation', 'pet-project'],
       links: [
-        { name: 'github', href: 'https://github.com/OleinikovaPolina/task-tracking-for-FTML' },
-        {name: 'View demo',href:'https://oleinikovapolina.github.io/task-tracking-for-FTML/dist/#/'}
+        { name: 'github', href: 'https://github.com/OleinikovaPolina/landing-for-FTML-2' },
+        { name: 'View demo', href: 'https://oleinikovapolina.github.io/landing-for-FTML-2/' }
       ]
     },
     {
@@ -69,7 +66,24 @@ export const state: State = {
       categories: ['vue', 'typescript', 'pet-project'],
       links: [
         { name: 'github', href: 'https://github.com/OleinikovaPolina/Weather' },
-        {name: 'View demo',href:'https://oleinikovapolina.github.io/Weather/dist/'}
+        { name: 'View demo', href: 'https://oleinikovapolina.github.io/Weather/dist/' }
+      ]
+    },
+    {
+      technologies: [
+        { name: 'Vue' }, { name: 'Vuex' },
+        { name: 'Typescript' }, { name: 'Vuetify' },
+        { name: 'Vue-router' }, { name: 'Vuex-smart-module' },
+        { name: 'Vue2-editor' }, { name: 'Vuedraggable' },
+        { name: 'Vue-moment' }, { name: 'Axios' }
+      ],
+      images: [
+        require('@/assets/images/projects/img2.png')
+      ],
+      categories: ['vue', 'typescript', 'pet-project'],
+      links: [
+        { name: 'github', href: 'https://github.com/OleinikovaPolina/task-tracking-for-FTML' },
+        { name: 'View demo', href: 'https://oleinikovapolina.github.io/task-tracking-for-FTML/dist/#/' }
       ]
     },
     {
@@ -83,21 +97,7 @@ export const state: State = {
       categories: ['vue', 'javascript', 'pet-project'],
       links: [
         { name: 'github', href: 'https://github.com/OleinikovaPolina/RickAndMorty' },
-        {name: 'View demo',href:'https://oleinikovapolina.github.io/RickAndMorty/dist/#/'}
-      ]
-    },
-    {
-      technologies: [
-        { name: 'HTML' }, { name: 'Javascript' }, { name: 'CSS' },
-        { name: 'Bootstrap' }
-      ],
-      images: [
-        require('@/assets/images/projects/retro.png')
-      ],
-      categories: ['javascript', 'animation', 'pet-project'],
-      links: [
-        { name: 'github', href: 'https://github.com/OleinikovaPolina/landing-for-FTML-2' },
-        {name: 'View demo',href:'https://oleinikovapolina.github.io/landing-for-FTML-2/'}
+        { name: 'View demo', href: 'https://oleinikovapolina.github.io/RickAndMorty/dist/#/' }
       ]
     },
     {
@@ -122,8 +122,30 @@ export const state: State = {
       categories: ['animation', 'javascript'],
       links: [
         { name: 'github', href: 'https://github.com/OleinikovaPolina/alexie' },
-        {name: 'View demo',href:'https://oleinikovapolina.github.io/alexie/'}
+        { name: 'View demo', href: 'https://oleinikovapolina.github.io/alexie/' }
       ]
+    },
+    {
+      technologies: [
+        { name: 'Vue' }, { name: 'Axios' },
+        { name: 'Bootstrap' }, { name: 'Javascript' }
+      ],
+      images: [
+        require('@/assets/images/projects/20.png')
+      ],
+      categories: ['vue', 'javascript', 'pet-project'],
+      links: []
+    },
+    {
+      technologies: [
+        { name: 'Vue' }, { name: 'Axios' },
+        { name: 'Bootstrap' }, { name: 'Javascript' }
+      ],
+      images: [
+        require('@/assets/images/projects/pr.png')
+      ],
+      categories: ['animation', 'javascript'],
+      links: []
     }
   ]
 }
