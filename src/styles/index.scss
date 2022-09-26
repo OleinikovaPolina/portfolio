@@ -55,12 +55,12 @@ ul li, ul ul {
 .v-app-bar.v-toolbar {
   background: rgb(var(--v-theme-background));
 
-  a {
+  .nav-link {
     color: var(--v-theme-on-background);
     position: relative;
   }
 
-  a:before {
+  .nav-link:before {
     content: '';
     position: absolute;
     transition: transform .5s ease;
@@ -72,7 +72,7 @@ ul li, ul ul {
     transform: scaleX(0);
   }
 
-  a:hover:before {
+  .nav-link:hover:before {
     transform: scaleX(.8);
   }
 }
