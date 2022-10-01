@@ -49,9 +49,9 @@
 
 svg {
   animation: rotate 30s infinite linear;
-  transform: scale(.6) translateY(-35px);
+  transform: scale(.6);
   @media (min-width: 600px) {
-    transform: scale(1) translateY(0)
+    transform: scale(1)
   }
 }
 div{

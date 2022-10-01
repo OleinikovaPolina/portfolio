@@ -15,6 +15,9 @@
     <v-container>
       <info-achievements-component />
     </v-container>
+    <v-container>
+      <info-contributions-component />
+    </v-container>
   </div>
 </template>
 
@@ -24,5 +27,6 @@ import InfoSkillsComponent from '@/components/info/InfoSkillsComponent.vue'
 import InfoEducationComponent from '@/components/info/InfoEducationComponent.vue'
 import InfoWorkExperienceComponent from '@/components/info/InfoWorkExperienceComponent.vue'
 import InfoAchievementsComponent from '@/components/info/InfoAchievementsComponent.vue'
+import InfoContributionsComponent from '@/components/info/InfoContributionsComponent.vue'
 </script>
 

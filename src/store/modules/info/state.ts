@@ -1,8 +1,9 @@
-import type { TechnologyType, AchievementType } from '@/types'
+import type { TechnologyType, AchievementType,ContributionType } from '@/types'
 
 export type State = {
   skills: TechnologyType[],
-  achievements: AchievementType[]
+  achievements: AchievementType[],
+  contributions: ContributionType[]
 }
 
 export const state: State = {
@@ -25,5 +26,6 @@ export const state: State = {
     { name: 'Sass', img: require('@/assets/images/skills/sass.png') },
     { name: 'Css', img: require('@/assets/images/skills/css.png') },
     { name: 'Html5', img: require('@/assets/images/skills/html.png') }
-  ]
+  ],
+  contributions:[]
 }

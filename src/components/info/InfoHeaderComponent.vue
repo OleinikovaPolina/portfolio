@@ -2,18 +2,21 @@
   <v-row
     align="center"
     :no-gutters="true"
-    class="section-header position-relative"
+    class="section-header"
   >
-    <div>
-      <animation-item-component :style="{color:'#f1f1f1',width:'20px',top:0,left:'20px'}" />
-      <animation-item-component :style="{color:'#f1f1f1',width:'15px',top:'30px',left:'100px'}" />
-      <animation-item-component :style="{color:'#b0e0ff',width:'10px',top:'55px',left:'-20px'}" />
-    </div>
     <v-col
       cols="12"
       md="6"
       class="text-center text-md-left position-relative"
     >
+      <div>
+        <animation-item-component :style="{color:'#f1f1f1',width:'20px',top:'-75px',left:'20px'}" />
+        <animation-item-component :style="{color:'#f1f1f1',width:'15px',top:'-45px',left:'100px'}" />
+        <animation-item-component :style="{color:'#b0e0ff',width:'10px',top:'-20px',left:'-20px'}" />
+        <animation-item-component :style="{color:'#f1f1f1',width:'20px',bottom:'0',right:'8%'}" />
+        <animation-item-component :style="{color:'#b0e0ff',width:'15px',bottom:'15%',right:0}" />
+        <animation-item-component :style="{color:'#edd8ff',width:'10px',bottom:'20%',right:'20%'}" />
+      </div>
       <div>
         <animation-item-component :style="{color:'#f1f1f1',width:'20px',bottom:'0',right:'8%'}" />
         <animation-item-component :style="{color:'#b0e0ff',width:'15px',bottom:'15%',right:0}" />

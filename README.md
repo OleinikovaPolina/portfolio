@@ -44,6 +44,7 @@ My portfolio
 * i18n
 * custom scrollbar, cursor
 * document.title come back
+* contribution calendar
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -57,6 +58,7 @@ My portfolio
 * Vuetify
 * Axios
 * Vue-i18n
+* Vue3-calendar-heatmap
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 

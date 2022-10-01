@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@mdi/font": "5.9.55",
+    "axios": "^0.27.2",
     "core-js": "^3.8.3",
     "roboto-fontface": "*",
     "vue": "^3.2.13",
@@ -42,6 +43,7 @@
     "typescript": "~4.5.5",
     "vue-cli-plugin-i18n": "~2.3.1",
     "vue-cli-plugin-vuetify": "~2.4.8",
+    "vue3-calendar-heatmap": "^2.0.0",
     "vuetify-loader": "^2.0.0-alpha.9"
   }
 }

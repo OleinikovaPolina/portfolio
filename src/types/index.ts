@@ -38,3 +38,8 @@ export type AchievementType = {
   readonly image: string,
   readonly file: string
 }
+
+export type ContributionType = {
+  date: string,
+  count: number
+}
