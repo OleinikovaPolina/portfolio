@@ -16,26 +16,26 @@ type AugmentedActionContext = {
 } & Omit<ActionContext<State, RootState>, 'commit'>
 
 export type Actions = {
-  // getContributionsGitlab (): Promise<ContributionType[]>,
+  getContributionsGitlab (): Promise<ContributionType[]>,
   getContributionsGithub (): Promise<ContributionType[]>,
   getContributions ({ dispatch, commit }: AugmentedActionContext): void
 }
 
 export const actions: ActionTree<State, RootState> & Actions = {
-  // getContributionsGitlab: async () => {
-  //   const contributions: ContributionType[] = []
-  //   await axios
-  //     .get('https://git.itmo.su/users/id336757/calendar.json')
-  //     .then((res) => {
-  //       for (const [key, value] of Object.entries(res.data)) {
-  //         contributions.push({
-  //           date: key,
-  //           count: Number(value)
-  //         })
-  //       }
-  //     })
-  //   return contributions
-  // },
+  getContributionsGitlab: async () => {
+    const contributions: ContributionType[] = []
+    await axios
+      .get('https://netnr-proxy.up.railway.app/https://git.itmo.su/users/id336757/calendar.json')
+      .then((res) => {
+        for (const [key, value] of Object.entries(res.data)) {
+          contributions.push({
+            date: key,
+            count: Number(value)
+          })
+        }
+      })
+    return contributions
+  },
   getContributionsGithub: async () => {
     const contributions: ContributionType[] = []
     await axios
@@ -54,15 +54,16 @@ export const actions: ActionTree<State, RootState> & Actions = {
     return contributions
   },
   getContributions: async ({ dispatch, commit }) => {
-    // const gitlab = await dispatch('getContributionsGitlab')
+    const gitlab = await dispatch('getContributionsGitlab')
     const github = await dispatch('getContributionsGithub')
-    // github.forEach((element: ContributionType, index: number) => {
-    //   const itemIndex = gitlab.findIndex((item: ContributionType) => item.date === element.date)
-    //   if (itemIndex !== -1) {
-    //     github[index].count = github[index].count + gitlab[itemIndex].count
-    //   }
-    // })
-    console.log(github)
+    if (gitlab) {
+      github.forEach((element: ContributionType, index: number) => {
+        const itemIndex = gitlab.findIndex((item: ContributionType) => item.date === element.date)
+        if (itemIndex !== -1) {
+          github[index].count = github[index].count + gitlab[itemIndex].count
+        }
+      })
+    }
     commit('SET_CONTRIBUTIONS', github)
   }
 }
