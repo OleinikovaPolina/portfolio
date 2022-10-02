@@ -3,58 +3,57 @@
     <projects-header-component />
     <v-row justify="center">
       <v-col
-        cols="12"
-        lg="8"
+        cols="10"
+        md="5"
+        class="pb-0 pb-md-12"
       >
-        <v-row>
-          <v-col
-            cols="7"
-          >
-            <v-text-field
-              v-model="form.title"
-              :label="t('search')"
-              density="comfortable"
-              variant="outlined"
-              color="info"
-              single-line
-            />
-          </v-col>
-          <v-col
-            cols="5"
-          >
-            <v-autocomplete
-              v-model="form.categories"
-              :items="categories"
-              :label="t('category')"
-              density="comfortable"
-              variant="outlined"
-              color="info"
-              single-line
-              multiple
-              filled
-              chips
-              closable-chips
-              :no-data-text="t('nodata')"
+        <v-text-field
+          v-model="form.title"
+          :label="t('search')"
+          :density="$vuetify.display.smAndDown?'compact':'comfortable'"
+          variant="outlined"
+          color="info"
+          single-line
+          hide-details
+        />
+      </v-col>
+      <v-col
+        cols="10"
+        md="3"
+        class="pb-8 pb-md-12"
+      >
+        <v-autocomplete
+          v-model="form.categories"
+          :items="categories"
+          :label="t('category')"
+          :density="$vuetify.display.smAndDown?'compact':'comfortable'"
+          variant="outlined"
+          color="info"
+          single-line
+          multiple
+          filled
+          chips
+          closable-chips
+          :no-data-text="t('nodata')"
+          hide-details
+        >
+          <template #chip="{ props, selection }">
+            <v-chip
+              v-if="selection.index ===0"
+              v-bind="props"
+              :closable="true"
+              size="small"
             >
-              <template #chip="{ props, selection }">
-                <v-chip
-                  v-if="selection.index ===0"
-                  v-bind="props"
-                  :closable="true"
-                  size="small"
-                >
-                  {{ selection.title }}
-                </v-chip>
-                <span
-                  v-if="selection.index === 1"
-                  class="text-grey text-caption align-self-center"
-                >
+              {{ selection.title }}
+            </v-chip>
+            <span
+              v-if="selection.index === 1"
+              class="text-grey text-caption align-self-center"
+            >
                   (+{{ form.categories.length - 1 }} {{ t('others') }})
                 </span>
-              </template>
-            </v-autocomplete>
-          </v-col>
-        </v-row>
+          </template>
+        </v-autocomplete>
       </v-col>
     </v-row>
     <v-row style="min-height: 70vh;">

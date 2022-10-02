@@ -12,7 +12,7 @@ const routes: Array<RouteRecordRaw> = [
     path: '/projects',
     name: 'projects',
     meta: {
-      title: 'projects'
+      title: 'router.projects'
     },
     component: () => import('../views/ProjectsView.vue')
   },
@@ -20,7 +20,7 @@ const routes: Array<RouteRecordRaw> = [
     path: '/contacts',
     name: 'contacts',
     meta: {
-      title: 'contacts'
+      title: 'router.contacts'
     },
     component: () => import('../views/ContactsView.vue')
   },
@@ -39,7 +39,7 @@ const router = createRouter({
   }
 })
 
-const default_title = 'Portfolio'
+const default_title = 'router.Portfolio'
 const default_favicon = './favicon.ico'
 const back_favicon = './hi.png'
 const favicon = document.querySelector('link[rel=icon]') as HTMLLinkElement
@@ -54,7 +54,7 @@ router.afterEach((to) => {
 })
 
 document.addEventListener('visibilitychange', () => {
-  document.title = document.hidden ? 'come back' : pageTitle
+  document.title = document.hidden ? i18n.global.t('router.comeBack') : pageTitle
   favicon.href = document.hidden ? back_favicon : default_favicon
 })
 

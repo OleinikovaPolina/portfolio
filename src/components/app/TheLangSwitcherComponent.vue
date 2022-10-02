@@ -22,12 +22,16 @@
 </template>
 
 <script setup lang="ts">
-import { computed, onMounted } from 'vue'
+import { computed, onMounted, watch } from 'vue'
 import { useStore } from 'vuex'
 import { useI18n } from 'vue-i18n'
+import { useRoute } from 'vue-router'
+import i18n from '@/i18n'
 
 const store = useStore()
 const theme = computed(() => store.getters['application/theme'])
+const route = useRoute()
+const default_title = 'router.Portfolio'
 const { locale } = useI18n()
 
 const updateLanguage = (lang: string) => {
@@ -37,5 +41,12 @@ const updateLanguage = (lang: string) => {
 
 onMounted(() => {
   locale.value = sessionStorage.getItem('locale') === 'ru' ? 'ru' : 'en'
+})
+
+watch(locale, () => {
+  const title = String(route.meta.title)
+  document.title = title
+    ? `${i18n.global.t(default_title)} | ${i18n.global.t(title)}`
+    : i18n.global.t(default_title)
 })
 </script>

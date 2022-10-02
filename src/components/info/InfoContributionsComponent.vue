@@ -1,5 +1,5 @@
 <template>
-  <div class="py-8 py-md-16">
+  <div class="py-4 py-md-16">
     <div class="text-h5 text-md-h4 text-lg-h3 mx-auto text-center pb-2 pb-md-4">
       {{ $t('contributionTitle') }}
     </div>
@@ -7,12 +7,11 @@
       <div class="d-flex align-center">
         <a
           href="https://github.com/OleinikovaPolina"
-          class="text-h6 text-decoration-none"
-          :class="theme==='dark'?'text-white':'text-black'"
+          class="text-md-h6 text-decoration-none"
           target="_blank"
         >
           <v-icon
-            size="x-large"
+            :size="$vuetify.display.smAndDown?'small':'x-large'"
             class="rounded-circle mr-1"
           >
             mdi-github
@@ -22,11 +21,11 @@
       </div>
       <div class="d-flex align-center">
         <div
-          class="text-h6 text-decoration-none"
+          class="text-md-h6 text-decoration-none"
           :class="theme==='dark'?'text-white':'text-black'"
         >
           <v-icon
-            size="x-large"
+            :size="$vuetify.display.smAndDown?'small':'x-large'"
             class="rounded-circle mr-1"
           >
             mdi-gitlab

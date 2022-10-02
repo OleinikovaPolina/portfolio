@@ -17,11 +17,6 @@
         <animation-item-component :style="{color:'#b0e0ff',width:'15px',bottom:'15%',right:0}" />
         <animation-item-component :style="{color:'#edd8ff',width:'10px',bottom:'20%',right:'20%'}" />
       </div>
-      <div>
-        <animation-item-component :style="{color:'#f1f1f1',width:'20px',bottom:'0',right:'8%'}" />
-        <animation-item-component :style="{color:'#b0e0ff',width:'15px',bottom:'15%',right:0}" />
-        <animation-item-component :style="{color:'#edd8ff',width:'10px',bottom:'20%',right:'20%'}" />
-      </div>
       <div class="d-flex align-center justify-center justify-md-start mb-4">
         <div class="text-h4 text-md-h3 text-lg-h2 mr-2 mr-md-4 font-weight-regular">
           {{ t('title') }}
@@ -40,7 +35,7 @@
       </div>
       <div class="d-flex justify-center justify-md-start mb-4">
         <v-btn
-          v-for="contact in socials"
+          v-for="contact in contacts"
           :key="contact.href"
           :href="contact.href"
           :icon="true"
@@ -108,7 +103,7 @@ const { t } = useI18n({
   useScope: 'local'
 })
 const store = useStore()
-const socials = computed(() => store.getters['contacts/socials'])
+const contacts = computed(() => store.getters['contacts/contacts'])
 </script>
 <style scoped>
 @keyframes hi {

@@ -1,8 +1,11 @@
 {
-  "Portfolio": "Portfolio",
   "five": "High five!",
-  "contacts": "Contacts",
-  "projects": "Projects",
+  "router": {
+    "Portfolio": "Portfolio",
+    "contacts": "Contacts",
+    "projects": "Projects",
+    "comeBack": "Come back"
+  },
   "achievementsTitle": "Achievements And Certifications",
   "contributionTitle": "Contribution activity",
   "achievements": [
@@ -72,7 +75,15 @@
       "descriptionLong": "<h4>✨ About the project</h4><p>Student's personal account. Online sending of all documents and filling in all the necessary information. Tracking the rating for selected specialties. Pair project.</p>"
     }
   ],
-  "hi": "Say Hi, it's free)",
+  "contacts": {
+    "title": "Contact me",
+    "subtitle": "Feel free to contact me and I will get back to you as soon as possible.",
+    "social": "Social networks",
+    "find": "Find me in",
+    "place": "St. Petersburg, Russia",
+    "hi": "Say Hello"
+  },
   "more": "More",
+  "github": "github",
   "View demo": "View Demo"
 }

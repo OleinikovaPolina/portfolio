@@ -18,7 +18,7 @@
       </div>
       <div class="d-flex align-center justify-center justify-md-start mb-4">
         <div class="text-h4 text-md-h3 text-lg-h2 mr-4 font-weight-regular">
-          {{ $t('projects') }}
+          {{ t('title') }}
         </div>
       </div>
       <div class="header-subtitle mb-4">
@@ -57,9 +57,11 @@ const { t } = useI18n({
 <i18n>
 {
   "en": {
+    "title": "Projects",
     "subtitle": "My projects makes use of vast variety of latest technology tools."
   },
   "ru": {
+    "title": "Проекты",
     "subtitle": "В моих проектах используется широкий спектр новейших технологических инструментов."
   }
 }

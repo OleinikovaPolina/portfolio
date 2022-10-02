@@ -11,11 +11,32 @@
       >
         <div class="d-flex align-center justify-center justify-md-start mb-4">
           <div class="text-h4 text-md-h3 text-lg-h2 mr-4 font-weight-regular">
-            {{ $t('hi') }}
+            {{ $t('contacts.title') }}
           </div>
         </div>
         <div class="header-subtitle mb-4">
-         </div>
+          {{ $t('contacts.subtitle') }}
+        </div>
+        <div class="text-h6">
+          <v-icon size="x-small">
+            mdi-forum
+          </v-icon>
+          {{ $t('contacts.hi') }}
+        </div>
+        <a href="mailto:oleinikowa.poly@yandex.ru">Email: oleinikowa.poly@yandex.ru</a>
+        <div class="text-h6 mt-4">
+          <v-icon size="x-small">
+            mdi-map-marker
+          </v-icon>
+          {{ $t('contacts.find') }}
+        </div>
+        <div>{{ $t('contacts.place') }}</div>
+        <div class="text-h6 mt-4">
+          <v-icon size="x-small">
+            mdi-account-circle
+          </v-icon>
+          {{ $t('contacts.social') }}
+        </div>
         <div class="d-flex justify-center justify-md-start">
           <v-btn
             v-for="contact in socials"
