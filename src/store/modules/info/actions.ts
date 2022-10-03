@@ -25,7 +25,7 @@ export const actions: ActionTree<State, RootState> & Actions = {
   getContributionsGitlab: async () => {
     const contributions: ContributionType[] = []
     await axios
-      .get('https://netnr-proxy.up.railway.app/https://git.itmo.su/users/id336757/calendar.json')
+      .get('https://netnr-proxy.up.railway.app/https://git.itmo.su/users/id336757/calendar.json?timestamp=' + new Date().getTime())
       .then((res) => {
         for (const [key, value] of Object.entries(res.data)) {
           contributions.push({
@@ -39,7 +39,7 @@ export const actions: ActionTree<State, RootState> & Actions = {
   getContributionsGithub: async () => {
     const contributions: ContributionType[] = []
     await axios
-      .get('https://gh-calendar.rschristian.dev/user/OleinikovaPolina')
+      .get('https://gh-calendar.rschristian.dev/user/OleinikovaPolina?timestamp=' + new Date().getTime())
       .then(res => res.data.contributions)
       .then(data => {
         for (const res of data) {
