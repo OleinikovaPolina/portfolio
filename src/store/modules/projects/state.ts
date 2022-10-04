@@ -191,7 +191,7 @@ export const state: State = {
         require('@/assets/images/projects/enrollee/enrollee3.png'),
         require('@/assets/images/projects/enrollee/enrollee4.png'),
       ],
-      categories: ['animation', 'javascript'],
+      categories: ['vue', 'javascript'],
       links: []
     }
   ]
