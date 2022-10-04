@@ -10,7 +10,7 @@
       :to="link.path"
     >
       <v-icon>{{ link.icon }}</v-icon>
-      <span>{{ link.name }}</span>
+      <span>{{ $t(link.name) }}</span>
     </v-btn>
   </v-bottom-navigation>
 </template>
