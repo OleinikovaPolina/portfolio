@@ -34,9 +34,11 @@
       <v-card-title class="px-6 pb-0">
         {{ $rt(project.title) }}
       </v-card-title>
-
       <v-card-text class="pt-0">
-        <div class="mt-2">
+        <div class="text-body-2 text-medium-emphasis">
+          {{ $t('date') }}: {{ $rt(project.date) }}
+        </div>
+        <div>
           Categories:&nbsp;<span>{{ project.categories.join(', ') }}</span>
         </div>
 

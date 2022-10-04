@@ -31,7 +31,8 @@ export const state: State = {
       links: [
         { name: 'github', href: 'https://github.com/OleinikovaPolina/ict.itmo' },
         { name: 'View demo', href: 'https://fict.itmo.ru/' }
-      ]
+      ],
+      date: '03.22-06.22'
     },
     {
       technologies: [
@@ -50,7 +51,8 @@ export const state: State = {
       links: [
         { name: 'github', href: 'https://github.com/OleinikovaPolina/landing-for-FTML-2' },
         { name: 'View demo', href: 'https://oleinikovapolina.github.io/landing-for-FTML-2/' }
-      ]
+      ],
+      date: '10.21'
     },
     {
       technologies: [
@@ -66,10 +68,11 @@ export const state: State = {
         require('@/assets/images/projects/projectControl/projectControl 8.png'),
         require('@/assets/images/projects/projectControl/projectControl 5.png'),
         require('@/assets/images/projects/projectControl/projectControl1.png'),
-        require('@/assets/images/projects/projectControl/projectControl 7.png'),
+        require('@/assets/images/projects/projectControl/projectControl 7.png')
       ],
       categories: ['vue', 'typescript', 'pet-project'],
-      links: [{ name: 'github', href: 'https://github.com/OleinikovaPolina/ProjectControl' }]
+      links: [{ name: 'github', href: 'https://github.com/OleinikovaPolina/ProjectControl' }],
+      date: '02.22-03.22'
     },
     {
       technologies: [
@@ -86,7 +89,8 @@ export const state: State = {
       links: [
         { name: 'github', href: 'https://github.com/OleinikovaPolina/Weather' },
         { name: 'View demo', href: 'https://oleinikovapolina.github.io/Weather/dist/' }
-      ]
+      ],
+      date: '01.22'
     },
     {
       technologies: [
@@ -106,7 +110,8 @@ export const state: State = {
       links: [
         { name: 'github', href: 'https://github.com/OleinikovaPolina/task-tracking-for-FTML' },
         { name: 'View demo', href: 'https://oleinikovapolina.github.io/task-tracking-for-FTML/dist/#/' }
-      ]
+      ],
+      date: '04.22'
     },
     {
       technologies: [
@@ -117,13 +122,14 @@ export const state: State = {
         require('@/assets/images/projects/rick/rick.png'),
         require('@/assets/images/projects/rick/rick1.png'),
         require('@/assets/images/projects/rick/rick2.png'),
-        require('@/assets/images/projects/rick/rick3.png'),
+        require('@/assets/images/projects/rick/rick3.png')
       ],
       categories: ['vue', 'javascript', 'pet-project'],
       links: [
         { name: 'github', href: 'https://github.com/OleinikovaPolina/RickAndMorty' },
         { name: 'View demo', href: 'https://oleinikovapolina.github.io/RickAndMorty/dist/#/' }
-      ]
+      ],
+      date: '12.21'
     },
     {
       technologies: [
@@ -134,10 +140,11 @@ export const state: State = {
         require('@/assets/images/projects/superapp/superapp1.png'),
         require('@/assets/images/projects/superapp/superapp2.png'),
         require('@/assets/images/projects/superapp/superapp3.png'),
-        require('@/assets/images/projects/superapp/superapp4.png'),
+        require('@/assets/images/projects/superapp/superapp4.png')
       ],
       categories: ['javascript', 'pet-project'],
-      links: [{ name: 'View demo', href: 'https://oleinikovapolina.github.io/SuperAppForStudentsDemo/#/' }]
+      links: [{ name: 'View demo', href: 'https://oleinikovapolina.github.io/SuperAppForStudentsDemo/#/' }],
+      date: '12.21'
     },
     {
       technologies: [
@@ -153,13 +160,14 @@ export const state: State = {
         require('@/assets/images/projects/alex/alex6.png'),
         require('@/assets/images/projects/alex/alex7.png'),
         require('@/assets/images/projects/alex/alex8.png'),
-        require('@/assets/images/projects/alex/alex9.png'),
+        require('@/assets/images/projects/alex/alex9.png')
       ],
       categories: ['animation', 'javascript'],
       links: [
         { name: 'github', href: 'https://github.com/OleinikovaPolina/alexie' },
         { name: 'View demo', href: 'https://oleinikovapolina.github.io/alexie/' }
-      ]
+      ],
+      date: '11.21-12.21'
     },
     {
       technologies: [
@@ -175,10 +183,11 @@ export const state: State = {
         require('@/assets/images/projects/eTesting/eTesting6.png'),
         require('@/assets/images/projects/eTesting/eTesting7.png'),
         require('@/assets/images/projects/eTesting/eTesting8.png'),
-        require('@/assets/images/projects/eTesting/eTesting9.png'),
+        require('@/assets/images/projects/eTesting/eTesting9.png')
       ],
       categories: ['vue', 'javascript', 'pet-project'],
-      links: []
+      links: [],
+      date: '08.20'
     },
     {
       technologies: [
@@ -189,10 +198,11 @@ export const state: State = {
         require('@/assets/images/projects/enrollee/enrollee1.png'),
         require('@/assets/images/projects/enrollee/enrollee2.png'),
         require('@/assets/images/projects/enrollee/enrollee3.png'),
-        require('@/assets/images/projects/enrollee/enrollee4.png'),
+        require('@/assets/images/projects/enrollee/enrollee4.png')
       ],
       categories: ['vue', 'javascript'],
-      links: []
+      links: [],
+      date: '05.20-06.20'
     }
   ]
 }

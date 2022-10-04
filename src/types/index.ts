@@ -16,7 +16,8 @@ export type ProjectType = {
   readonly technologies: TechnologyType[],
   readonly images: string[],
   readonly categories: string[],
-  readonly links: LinkType[]
+  readonly links: LinkType[],
+  readonly date: string
 }
 
 export type LinkType = {
@@ -24,12 +25,6 @@ export type LinkType = {
   readonly icon?: string,
   readonly name?: string,
   readonly color?: string
-}
-
-export type InfoType = {
-  readonly name: string,
-  readonly content: string[],
-  readonly date: string
 }
 
 export type AchievementType = {
