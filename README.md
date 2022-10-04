@@ -38,13 +38,13 @@ My portfolio
 <!-- FEATURES -->
 <h2 id="features">🌟 FEATURES</h2>
 
-* dark and light theme
+* dark and light themes
 * svg animation
 * search projects by title, categories
-* i18n
+* multilingualism
 * custom scrollbar, cursor
-* document.title come back
-* contribution calendar
+* changing the title of the browser window when leaving the page
+* combined calendar of gitlab, github contributions activity
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 

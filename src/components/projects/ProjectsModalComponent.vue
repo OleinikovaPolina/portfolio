@@ -39,7 +39,7 @@
           {{ $t('date') }}: {{ $rt(project.date) }}
         </div>
         <div>
-          Categories:&nbsp;<span>{{ project.categories.join(', ') }}</span>
+          {{ $t('Categories') }}:&nbsp;<span>{{ project.categories.join(', ') }}</span>
         </div>
 
         <v-chip-group :column="true">

@@ -25,6 +25,11 @@
   ],
   "projectsArray": [
     {
+      "title": "\uD83D\uDC69\u200D\uD83D\uDCBB\uD83D\uDCCB Personal portfolio‑website",
+      "descriptionShort": "Personal portfolio website with information about me: skills, education, work experience. A page with projects with search and filtering. Combined calendar of gitlab, github activity.",
+      "descriptionLong": "<h4>✨ About the project</h4><p>Personal portfolio website with information about me: skills, education, work experience. A page with projects with search and filtering. Combined calendar of gitlab, github activity.</p><h4>\uD83C\uDF1F Features</h4> <ul> <li>dark and light themes</li> <li>svg animation</li> <li>search for projects by title, category</li> <li>multilingualism</li> <li>custom scrollbar, cursor</li> <li>changing the title of the browser window when leaving the page</li> <li>combined calendar of gitlab, github contributions activity</li> </ul>"
+    },
+    {
       "title": "\uD83C\uDFEB\uD83D\uDCBB Faculty of ICT website",
       "descriptionShort": "The site is the hallmark of ITMO Faculty of ICT. The site should provide accessible information about the activities of the faculty, disciplines and teachers.",
       "descriptionLong": "<h4>✨ About the project</h4><p>The faculty of infocommunication technologies is the main starting point in the development of professional skills. The site is the hallmark of itmo faculty of ict. When going to the site, the entrant or his parents should have an understanding of what kind of faculty it is and what its specialization is. The site contains accessible information about the activities, information about disciplines and teachers. There are also pages for administration.</p> <p><strong>\uD83D\uDDFA  Map</strong></p> <p><strong>Basic</strong></p> <ul> <li>home</li> <ul> <li>articles</li> </ul> <li>events</li> <ul> <li>all news</li> <li>events, news, announcements</li> </ul> <li>for students</li> <ul> <li>articles</li> </ul> <li>admission</li> <ul> <li>list of directions for master's degree, bachelor's degree</li> <ul> <li>directions pages</li> <ul> <li>disciplines of the direction</li> </ul> </ul> </ul> <li>contacts</li> </ul> <p><strong>Admin panel</strong></p> <ul> <li>login page</li> <li>published</li> <ul> <li>editing</li> </ul> <li>create an entry</li> <li>favorites</li> <ul> <li>editing</li> </ul> <li>tags</li> </ul> <p><strong>\uD83C\uDF1F  Features</strong></p> <ul> <li>dark and light theme</li> <li>animation:</li> <ul> <li>spinning hexagons with text appearance</li> <li>carousel with popup oval with text</li> <li>an arrow moving along the road and passing the marks, reaching which the text appears. At the end of the road is a book that changes the position and text</li> <li>smooth appearance of the element when scrolling</li> <li>lines emerging from the sides of the page</li> <li>block with photos moving along ovals with hover effect</li> </ul> <li>admin:</li> <ul> <li>crop photos on upload</li> <li>changing the format of photos when previewing blocks (double and slider)</li> <li>preview of the post, preview of blocks for articles that will lead to the article itself on the pages</li> <li>six types of custom blocks in post creation (two blocks, text, image, slider, quote, subtitle)</li> <li>draggable blocks</li> </ul> <li>pagination, search, news filtering</li> <li>carousels:</li> <ul> <li>with oval blocks</li> <li>with 6 (4) images in two lines</li> <li>with 4 (2) zoom hover effect</li> <li>with 1 image and height adjusted to the first one in the queue</li> </ul> <li>expansion-panel with outgoing lines</li> </ul>"
@@ -86,5 +91,10 @@
   "more": "More",
   "github": "github",
   "View demo": "View Demo",
-  "date": "Date"
+  "close": "close",
+  "date": "Date",
+  "Projects": "Projects",
+  "Home": "Home",
+  "Contacts": "Contacts",
+  "Categories": "Categories"
 }

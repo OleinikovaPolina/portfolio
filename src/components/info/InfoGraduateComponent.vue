@@ -210,8 +210,6 @@ l-221 0 -23 60 c-95 252 -302 515 -555 707 -413 312 -1014 471 -1571 417z"
             dur="8s"
             repeatCount="indefinite"
           />
-          <!--          transform-origin: 355px 565px;
-              transform: translate(-194.5px ,-298px) scale(1.5,1)-->
         </path>
       </g>
       <path

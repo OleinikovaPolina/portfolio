@@ -12,6 +12,24 @@ export const state: State = {
   projects: [
     {
       technologies: [
+        { name: 'Vue' }, { name: 'Vuex' }, { name: 'Vuetify' },
+        { name: 'Axios' }, { name: 'Vue-router' }, { name: 'Vue-i18n' },
+        { name: 'Vue3-calendar-heatmap' }
+      ],
+      images: [
+        require('@/assets/images/projects/portfolio/portfolio (2).png'),
+        require('@/assets/images/projects/portfolio/portfolio (4).png'),
+        require('@/assets/images/projects/portfolio/portfolio (3).png'),
+        require('@/assets/images/projects/portfolio/portfolio (1).png')
+      ],
+      categories: ['vue', 'animation', 'typescript', 'pet-project'],
+      links: [
+        { name: 'github', href: 'https://github.com/OleinikovaPolina/portfolio' }
+      ],
+      date: '08.22-09.22'
+    },
+    {
+      technologies: [
         { name: 'Vue' }, { name: 'Vuex' },
         { name: 'Vuetify' }, { name: 'Axios' },
         { name: 'Vue-router' }, { name: 'Vue-moment' },

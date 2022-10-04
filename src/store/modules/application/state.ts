@@ -7,7 +7,7 @@ export type State = {
 
 export const state: State = {
   headerLinks: [
-    { name: 'Info', path: '/', icon: 'mdi-information-outline' },
+    { name: 'Home', path: '/', icon: 'mdi-information-outline' },
     { name: 'Projects', path: '/projects', icon: 'mdi-view-list-outline' },
     { name: 'Contacts', path: '/contacts', icon: 'mdi-email-outline' }
   ],

@@ -24,7 +24,7 @@
             :to="link.path"
             class="text-decoration-none mr-4 mr-xl-8 nav-link"
           >
-            {{ link.name }}
+            {{ $t(link.name) }}
           </router-link>
         </div>
         <div>
