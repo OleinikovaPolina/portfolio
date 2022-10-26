@@ -25,7 +25,7 @@ export const actions: ActionTree<State, RootState> & Actions = {
   getContributionsGitlab: async () => {
     const contributions: ContributionType[] = []
     await axios
-      .get('https://netnr-proxy.up.railway.app/https://git.itmo.su/users/id336757/calendar.json?timestamp=' + new Date().getTime())
+      .get('https://proxy.zme.ink/https://git.itmo.su/users/id336757/calendar.json?timestamp=' + new Date().getTime())
       .then((res) => {
         for (const [key, value] of Object.entries(res.data)) {
           contributions.push({
